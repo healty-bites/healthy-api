@@ -1,0 +1,6 @@
+INSERT INTO roles (nombre)
+VALUES
+    ('ADMIN'),
+    ('CLIENTE'),
+    ('NUTRICIONISTA')
+    ON CONFLICT DO NOTHING;
