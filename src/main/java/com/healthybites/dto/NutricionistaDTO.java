@@ -4,7 +4,9 @@ import jakarta.validation.constraints.*;
 import lombok.Data;
 
 @Data
-public class ClienteCreateDTO {
+public class NutricionistaDTO {
+
+    private Integer id;
 
     @NotBlank(message = "El nombre es obligatorio")
     @Size(max = 50, message = "El nombre debe tener 50 caracteres o menos")
@@ -14,16 +16,5 @@ public class ClienteCreateDTO {
     @Size(max = 50, message = "El apellido debe tener 50 caracteres o menos")
     private String apellido;
 
-    @NotBlank(message = "El sexo es obligatorio")
-    private String sexo;
-
-    @NotNull(message = "La edad es obligatorio")
-    private int edad;
-
-    @NotNull(message = "La altura es obligatorio")
-    private double altura;
-
-    @NotNull(message = "El peso es obligatorio")
-    private double peso;
-
+    private String bio;
 }
