@@ -30,9 +30,9 @@ public class SuscripcionMapper {
     public Suscripcion toEntity(SuscripcionCreateUpdateDTO suscripcionCreateUpdateDTO) {
         Suscripcion suscripcion = modelMapper.map(suscripcionCreateUpdateDTO, Suscripcion.class);
 
-        /*Usuario usuario = new Usuario();
+        Usuario usuario = new Usuario();
         usuario.setId(suscripcionCreateUpdateDTO.getUsuarioId());
-        suscripcion.setUsuario(usuario);*/
+        suscripcion.setUsuario(usuario);
 
         return suscripcion;
 
