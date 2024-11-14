@@ -5,7 +5,7 @@ import com.healthybites.model.enums.TipoContenido;
 import lombok.Data;
 
 @Data
-public class ContenidoDTO {
+public class ContenidoDetailsDTO {
     private Integer id;
     private String titulo;
     private String descripcion;
