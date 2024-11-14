@@ -21,7 +21,8 @@ public class UsuarioServiceImpl implements UsuarioService {
         if(usuarioRepository.existsByCorreo(usuario.getCorreo())) {
             throw new RuntimeException("El email ya esta registrado");
         }
-        usuario.setFechaCreacion(LocalDateTime.now());
-        return usuarioRepository.save(usuario);
+        /*usuario.setFechaCreacion(LocalDateTime.now());
+        return usuarioRepository.save(usuario);*/
+        return null;
     }
 }
